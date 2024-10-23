@@ -1,0 +1,24 @@
+# Remember to use sys.stdout.flush() after each print statement to print to the terminal right away!
+
+# On server start:
+print(f"Server started on port {port}. Accepting connections") 
+sys.stdout.flush()
+
+# To print for invalid expression use:
+print("Invalid expression") 
+sys.stdout.flush()
+
+# To print the sending message when sending to the server use:
+print(f"Sending operation: {op1} {op2} {op}") 
+sys.stdout.flush()
+OR
+print(f"Sending operation: {expression_x}")
+sys.stdout.flush()
+
+# To print the received message after receiving the operation from the client use:
+print(f"Received operation: {op1} {op2} {op}")
+sys.stdout.flush()
+
+# To print the error message after three time-out use:
+print("Error - No response after 3 attempts") 
+sys.stdout.flush()
